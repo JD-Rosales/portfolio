@@ -28,8 +28,8 @@ const Navbar: React.FC = () => {
 
         <ul
           className={clsx(
-            "fixed bottom-0 right-0 flex h-screen w-[300px] translate-x-full flex-col items-center justify-center gap-y-8 bg-gray-900 transition-all duration-300 md:relative md:flex md:h-full md:w-auto md:translate-x-0 md:flex-row md:space-x-2 md:bg-inherit",
-            isOpen && "translate-x-0",
+            "fixed bottom-0 right-0 flex h-screen w-[300px] translate-x-full flex-col items-center justify-center gap-y-8 bg-gray-900 transition-all duration-300 md:relative md:flex md:h-full md:w-auto md:transform-none md:flex-row md:space-x-2 md:bg-inherit",
+            isOpen && "transform-none",
           )}
         >
           <button

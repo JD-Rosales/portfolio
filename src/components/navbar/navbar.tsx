@@ -5,11 +5,13 @@ import { IoMdClose, IoMdDownload } from "react-icons/io";
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 import { LINKS } from "~/data/data";
+import { useClickOutside } from "~/hooks/hooks";
 
 import { NavItem } from "./nav-item";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const ref = useClickOutside<HTMLUListElement>(() => setIsOpen(false));
 
   const handleSidebarToggle = useCallback((): void => {
     setIsOpen((previousState) => !previousState);
@@ -28,9 +30,10 @@ const Navbar: React.FC = () => {
 
         <ul
           className={clsx(
-            "fixed bottom-0 right-0 flex h-screen w-[300px] translate-x-full flex-col items-center justify-center gap-y-8 bg-gray-900 transition-all duration-300 md:relative md:flex md:h-full md:w-auto md:transform-none md:flex-row md:space-x-2 md:bg-inherit",
+            "fixed bottom-0 right-0 flex h-screen w-[300px] translate-x-full flex-col items-center justify-center gap-y-5 bg-gray-900 transition-all duration-300 md:relative md:flex md:h-full md:w-auto md:transform-none md:flex-row md:space-x-4 md:bg-inherit",
             isOpen && "transform-none",
           )}
+          ref={ref}
         >
           <button
             className="absolute left-7 top-5 md:hidden"

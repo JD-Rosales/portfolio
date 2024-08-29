@@ -24,7 +24,7 @@ function App() {
       ) : (
         <>
           <Navbar />
-          <main className="px-8 md:px-10">
+          <main className="container mx-auto px-8 md:px-0">
             <Home />
           </main>
         </>

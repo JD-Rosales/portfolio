@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-gray-950 px-8 shadow-sm shadow-gray-900 md:px-10">
-      <div className="mx-auto flex h-16 items-center justify-between">
+      <div className="container mx-auto flex h-16 items-center justify-between">
         <a className="p-2 text-3xl font-bold" href="">
           JAKE
         </a>

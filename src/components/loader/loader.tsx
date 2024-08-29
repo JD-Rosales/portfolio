@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 
 const Loader: React.FC = () => {
   return (
-    <div className="flex h-screen w-full items-center justify-center">
+    <div className="relative flex h-screen w-full items-center justify-center overflow-hidden">
       <div className={styles["load"]}>
         <div>G</div>
         <div>N</div>

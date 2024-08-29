@@ -18,8 +18,8 @@ const Navbar: React.FC = () => {
   }, [setIsOpen]);
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-gray-950 px-8 shadow-sm shadow-gray-900 md:px-10">
-      <div className="container mx-auto flex h-16 items-center justify-between">
+    <nav className="container sticky top-0 z-50 mx-auto bg-gray-950 px-8 shadow-sm shadow-gray-900 md:px-0">
+      <div className="flex h-16 items-center justify-between">
         <a className="p-2 text-3xl font-bold" href="">
           JAKE
         </a>
@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
             className="absolute left-7 top-5 md:hidden"
             onClick={handleSidebarToggle}
           >
-            <IoMdClose size={24} color="#ffffff" />
+            <IoMdClose size={24} color="white" />
           </button>
 
           {LINKS.map((item) => (
@@ -64,20 +64,26 @@ const Navbar: React.FC = () => {
           </li>
 
           <div className="mt-4 flex gap-x-5 md:hidden">
-            <a href="https://github.com/JD-Rosales" target="_blank">
-              <FaGithub size={26} />
+            <a
+              className="rounded-full bg-green-700 p-3"
+              href="https://github.com/JD-Rosales"
+              target="_blank"
+            >
+              <FaGithub size={28} />
             </a>
             <a
+              className="rounded-full bg-green-700 p-3"
               href="https://www.linkedin.com/in/jake-rosales-0a33a621a"
               target="_blank"
             >
-              <FaLinkedin size={26} />
+              <FaLinkedin size={28} />
             </a>
             <a
+              className="rounded-full bg-green-700 p-3"
               href="https://www.facebook.com/jake.rosales.562329/"
               target="_blank"
             >
-              <FaFacebook size={26} />
+              <FaFacebook size={28} />
             </a>
           </div>
         </ul>

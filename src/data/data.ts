@@ -1,1 +1,2 @@
-export { LINKS } from "./links.data";
+export { AppRoute } from "./links.data";
+export { TechStack } from "./tech-stack.data";

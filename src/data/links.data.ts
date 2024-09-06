@@ -1,4 +1,4 @@
-const LINKS = [
+const AppRoute = [
   {
     label: "Home",
     href: "#home",
@@ -17,4 +17,4 @@ const LINKS = [
   },
 ] as const;
 
-export { LINKS };
+export { AppRoute };

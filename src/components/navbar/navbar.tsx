@@ -4,7 +4,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { IoMdClose, IoMdDownload } from "react-icons/io";
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 
-import { LINKS } from "~/data/data";
+import { AppRoute } from "~/data/data";
 import { useClickOutside } from "~/hooks/hooks";
 
 import { NavItem } from "./nav-item";
@@ -18,9 +18,9 @@ const Navbar: React.FC = () => {
   }, [setIsOpen]);
 
   return (
-    <nav className="container sticky top-0 z-50 mx-auto bg-gray-950 px-8 shadow-sm shadow-gray-900 md:px-0">
-      <div className="flex h-16 items-center justify-between">
-        <a className="p-2 text-3xl font-bold" href="">
+    <nav className="sticky top-0 z-50 bg-gray-950 px-8 shadow-sm shadow-gray-900">
+      <div className="container mx-auto flex h-16 items-center justify-between">
+        <a className="py-2 text-3xl font-bold" href="">
           JAKE
         </a>
 
@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
             <IoMdClose size={24} color="white" />
           </button>
 
-          {LINKS.map((item) => (
+          {AppRoute.map((item) => (
             <NavItem
               href={item.href}
               key={`menu-${item.label}`}
@@ -65,25 +65,25 @@ const Navbar: React.FC = () => {
 
           <div className="mt-4 flex gap-x-5 md:hidden">
             <a
-              className="rounded-full bg-green-700 p-3"
+              className="rounded-full bg-green-700 p-2"
               href="https://github.com/JD-Rosales"
               target="_blank"
             >
-              <FaGithub size={28} />
+              <FaGithub size={26} />
             </a>
             <a
-              className="rounded-full bg-green-700 p-3"
+              className="rounded-full bg-green-700 p-2"
               href="https://www.linkedin.com/in/jake-rosales-0a33a621a"
               target="_blank"
             >
-              <FaLinkedin size={28} />
+              <FaLinkedin size={26} />
             </a>
             <a
-              className="rounded-full bg-green-700 p-3"
+              className="rounded-full bg-green-700 p-2"
               href="https://www.facebook.com/jake.rosales.562329/"
               target="_blank"
             >
-              <FaFacebook size={28} />
+              <FaFacebook size={26} />
             </a>
           </div>
         </ul>

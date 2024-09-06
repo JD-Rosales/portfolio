@@ -26,8 +26,8 @@ const Home: React.FC = () => {
             <span className="font-semibold text-green-700">
               full-stack developer
             </span>{" "}
-            with over 2 years of experience of building efficient and seamless
-            web applications.
+            with over 2 years experience of building efficient and seamless web
+            applications.
           </p>
 
           <div className="mt-4 flex gap-x-4">

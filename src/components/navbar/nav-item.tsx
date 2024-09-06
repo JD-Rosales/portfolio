@@ -1,10 +1,10 @@
 import clsx from "clsx";
-import { LINKS } from "~/data/data";
+import { AppRoute } from "~/data/data";
 import { useGetActiveHash } from "~/hooks/hooks";
 
 type Properties = {
   children: React.ReactNode;
-  href: (typeof LINKS)[number]["href"];
+  href: (typeof AppRoute)[number]["href"];
   onClick: () => void;
 };
 

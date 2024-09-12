@@ -24,7 +24,7 @@ improving communication infrastructure.`,
 teachers and students.`,
     ],
     icon: React.createElement(CgWorkAlt),
-    date: "2024 - July 2024",
+    date: "Jan 2024 - July 2024",
   },
   {
     title: "Front-End Developer",

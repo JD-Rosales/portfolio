@@ -23,10 +23,11 @@ const About: React.FC = () => {
               More About Me
             </span>
             <p className="mt-6 text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis, nam! Fuga possimus eaque doloribus eveniet deserunt
-              inventore quaerat sunt! Nesciunt perferendis magnam, voluptates a
-              tempora perspiciatis pariatur optio dolores consectetur.
+              I'm a dedicated and innovative Web Developer with a strong
+              foundation in Information Technology and hands-on experience in
+              web-based application development. Skilled in both front-end and
+              back-end technologies, with a passion for creating efficient and
+              user-friendly web solutions.
             </p>
           </div>
 

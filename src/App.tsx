@@ -1,8 +1,15 @@
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "react-vertical-timeline-component/style.min.css";
 
-import { About, Home, Loader, Navbar } from "~/components/components";
+import {
+  About,
+  Experience,
+  Home,
+  Loader,
+  Navbar,
+} from "~/components/components";
 
 import "./App.css";
 
@@ -27,6 +34,7 @@ function App() {
           <main className="container mx-auto px-8 md:px-0">
             <Home />
             <About />
+            <Experience />
           </main>
         </>
       )}

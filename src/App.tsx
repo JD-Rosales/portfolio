@@ -9,6 +9,7 @@ import {
   Home,
   Loader,
   Navbar,
+  Projects,
 } from "~/components/components";
 
 import "./App.css";
@@ -35,6 +36,7 @@ function App() {
             <Home />
             <About />
             <Experience />
+            <Projects />
           </main>
         </>
       )}

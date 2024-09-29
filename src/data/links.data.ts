@@ -1,4 +1,9 @@
-const AppRoute = [
+type AppRouteType = {
+  label: string;
+  href: string;
+};
+
+const AppRoute: AppRouteType[] = [
   {
     label: "Home",
     href: "#home",
@@ -10,6 +15,10 @@ const AppRoute = [
   {
     label: "Experience",
     href: "#experience",
+  },
+  {
+    label: "Projects",
+    href: "#projects",
   },
   {
     label: "Contact",

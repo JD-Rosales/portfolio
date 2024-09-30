@@ -7,6 +7,7 @@ import "@splidejs/react-splide/css";
 import {
   About,
   Experience,
+  Footer,
   Home,
   Loader,
   Navbar,
@@ -39,6 +40,7 @@ function App() {
             <Projects />
             <Experience />
           </main>
+          <Footer />
         </>
       )}
     </>

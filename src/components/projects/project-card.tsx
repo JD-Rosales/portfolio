@@ -30,20 +30,7 @@ const ProjectCard: React.FC<Properties> = ({ data }: Properties) => {
         })}
       </Splide>
 
-      {data.tech && (
-        <div className="flex flex-wrap gap-2">
-          {data.tech.map((techStack) => {
-            return (
-              <div className="flex items-center gap-1 rounded-full bg-slate-900 px-3 py-1 text-xs">
-                <div className="h-2 w-2 rounded-full bg-green-700" />
-                <span>{techStack}</span>
-              </div>
-            );
-          })}
-        </div>
-      )}
-
-      <div className="mb-4 flex flex-col">
+      <div className="flex flex-col">
         <span className="block text-center text-lg font-bold underline">
           {data.name}
         </span>
@@ -54,6 +41,19 @@ const ProjectCard: React.FC<Properties> = ({ data }: Properties) => {
         )}
         <p className="mt-4 text-sm">{data.description}</p>
       </div>
+
+      {data.tech && (
+        <div className="mb-6 mt-2 flex flex-wrap gap-2">
+          {data.tech.map((techStack) => {
+            return (
+              <div className="flex items-center gap-1 rounded-full bg-slate-900 px-3 py-1 text-xs">
+                <div className="h-2 w-2 rounded-full bg-green-700" />
+                <span>{techStack}</span>
+              </div>
+            );
+          })}
+        </div>
+      )}
 
       <div className="mt-auto flex gap-3 text-xs">
         {data.gitHub ? (

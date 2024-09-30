@@ -8,10 +8,9 @@ import { ExperienceData } from "~/data/data";
 const Experience: React.FC = () => {
   return (
     <section className="my-8 min-h-screen py-8">
-      <h2 className="text-4xl font-bold text-green-700">Experience</h2>
-
-      <div>
-        <VerticalTimeline lineColor="#15803d ">
+      <h3 className="text-4xl font-bold text-green-700">Experience</h3>
+      <div className="mt-8">
+        <VerticalTimeline lineColor="#15803d">
           {ExperienceData.map((experience, index) => (
             <VerticalTimelineElement
               contentStyle={{

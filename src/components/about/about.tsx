@@ -4,7 +4,7 @@ import { Image } from "./image";
 
 const About: React.FC = () => {
   return (
-    <section className="min-h-screen overflow-x-hidden py-8">
+    <section className="overflow-x-hidden py-8">
       <h1 className="text-4xl font-bold text-green-700">About</h1>
       <div className="mt-8 flex flex-col gap-y-12 md:flex-row">
         <div className="flex flex-1 items-center justify-center">

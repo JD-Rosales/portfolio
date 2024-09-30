@@ -12,9 +12,8 @@ const Home: React.FC = () => {
           <span className="flex items-center font-medium uppercase">
             Hello! <span className="animate-bounce text-2xl"> 👋</span>
           </span>
-          <div className="text-6xl font-bold">
-            <span>I'm </span>
-            <span className="text-green-700">Jake Rosales</span>
+          <div className="text-center text-6xl font-bold">
+            I'm <span className="text-green-700">Jake Rosales</span>
           </div>
 
           <p className="max-w-[700px] text-center text-lg">

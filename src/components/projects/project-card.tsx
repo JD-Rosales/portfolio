@@ -52,7 +52,7 @@ const ProjectCard: React.FC<Properties> = ({ data }: Properties) => {
             Associated with {data.association}
           </span>
         )}
-        <p className="mt-2 text-sm">{data.description}</p>
+        <p className="mt-4 text-sm">{data.description}</p>
       </div>
 
       <div className="mt-auto flex gap-3 text-xs">

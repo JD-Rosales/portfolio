@@ -1,6 +1,6 @@
 import { TechStack } from "~/data/data";
 
-import { AboutImage } from "./about-image";
+import { Image } from "./image";
 
 const About: React.FC = () => {
   return (
@@ -11,9 +11,9 @@ const About: React.FC = () => {
           <div
             data-aos="fade-right"
             data-aos-duration="1500"
-            className="w-full"
+            className="flex w-full items-center justify-center"
           >
-            <AboutImage />
+            <Image />
           </div>
         </div>
 

@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="sticky top-0 z-50 bg-gray-950 px-8 shadow-sm shadow-gray-900">
       <div className="container mx-auto flex h-16 items-center justify-between">
-        <a className="py-2 text-3xl font-bold" href="">
+        <a className="py-2 text-2xl font-bold" href="">
           JAKE
         </a>
 
@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
 
         <ul
           className={clsx(
-            "fixed bottom-0 right-0 flex h-dvh w-[300px] translate-x-full flex-col items-center justify-center gap-y-5 bg-gray-900 transition-all duration-300 md:relative md:flex md:h-full md:w-auto md:transform-none md:flex-row md:space-x-4 md:bg-inherit",
+            "fixed bottom-0 right-0 flex h-dvh w-[300px] translate-x-full flex-col items-center justify-center gap-y-5 bg-gray-900 text-sm transition-all duration-300 md:relative md:flex md:h-full md:w-auto md:transform-none md:flex-row md:space-x-4 md:bg-inherit",
             isOpen && "transform-none",
           )}
           ref={ref}

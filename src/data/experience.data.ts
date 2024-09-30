@@ -1,6 +1,7 @@
 import React from "react";
-import { IconBaseProps } from "react-icons";
+import { type IconBaseProps } from "react-icons";
 import { CgWorkAlt } from "react-icons/cg";
+import { GiGraduateCap } from "react-icons/gi";
 
 type ExperienceType = {
   title: string;
@@ -36,6 +37,16 @@ teachers and students.`,
     ],
     icon: React.createElement(CgWorkAlt),
     date: "2022 - 2023",
+  },
+  {
+    title: "Bachelor of Science in Information Technology",
+    company: "Degree",
+    location: "Tacloban, City",
+    description: [
+      `Graduated Bachelor of Science in Information Technoly at Leyte Normal University`,
+    ],
+    icon: React.createElement(GiGraduateCap),
+    date: "2019 - 2023",
   },
 ] as const;
 

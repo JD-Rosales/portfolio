@@ -1,4 +1,4 @@
-const HomeImage = () => {
+const Image = () => {
   return (
     <>
       <svg
@@ -2012,4 +2012,4 @@ const HomeImage = () => {
   );
 };
 
-export { HomeImage };
+export { Image };

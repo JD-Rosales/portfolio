@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
           .
         </p>
         <p>
-          Built with React and Tailwind ♡ Source Code available my{" "}
+          Built with React and Tailwind ♡ Source Code available on my{" "}
           <a
             className="underline"
             href="https://github.com/JD-Rosales/"

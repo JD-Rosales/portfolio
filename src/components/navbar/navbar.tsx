@@ -6,24 +6,17 @@ import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 import { AppRoute } from "~/data/data";
 import { useActiveSectionContext, useClickOutside } from "~/hooks/hooks";
-import { type ActiveSection } from "~/types/types";
 
 import { NavItem } from "./nav-item";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useClickOutside<HTMLUListElement>(() => setIsOpen(false));
-  const { activeSection, setActiveSection, setTimeOfLastClick } =
-    useActiveSectionContext();
+  const { activeSection } = useActiveSectionContext();
 
-  const handleSidebarToggle = useCallback(
-    (activeSection: ActiveSection): void => {
-      setIsOpen((previousState) => !previousState);
-      setActiveSection(activeSection);
-      setTimeOfLastClick(Date.now());
-    },
-    [setIsOpen],
-  );
+  const handleSidebarToggle = useCallback((): void => {
+    setIsOpen((previousState) => !previousState);
+  }, [setIsOpen]);
 
   return (
     <nav className="sticky top-0 z-50 bg-gray-950 px-8 shadow-sm shadow-gray-900">
@@ -32,7 +25,7 @@ const Navbar: React.FC = () => {
           JAKE
         </a>
 
-        <button className="md:hidden" onClick={() => handleSidebarToggle}>
+        <button className="md:hidden" onClick={handleSidebarToggle}>
           <AiOutlineMenu size={24} color="#ffffff" />
         </button>
 
@@ -45,7 +38,7 @@ const Navbar: React.FC = () => {
         >
           <button
             className="absolute left-7 top-5 md:hidden"
-            onClick={() => handleSidebarToggle}
+            onClick={handleSidebarToggle}
           >
             <IoMdClose size={24} color="white" />
           </button>

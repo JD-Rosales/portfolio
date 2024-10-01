@@ -1,5 +1,6 @@
 import clsx from "clsx";
 
+import { useActiveSectionContext } from "~/hooks/hooks";
 import { type ActiveSection } from "~/types/types";
 
 type Properties = {
@@ -15,6 +16,8 @@ const NavItem: React.FC<Properties> = ({
   isActive,
   onClick,
 }: Properties) => {
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
   return (
     <li>
       <a
@@ -23,7 +26,11 @@ const NavItem: React.FC<Properties> = ({
           isActive && "bg-slate-800",
         )}
         href={href}
-        onClick={() => onClick(href)}
+        onClick={() => {
+          onClick(href);
+          setActiveSection(href);
+          setTimeOfLastClick(Date.now());
+        }}
       >
         {children}
       </a>

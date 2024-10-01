@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
           <li>
             <a
               className="flex items-center gap-x-1 rounded-2xl border-2 border-green-700 px-6 py-2 font-semibold transition-all duration-300 hover:scale-110"
-              href=""
+              href="/Resume.pdf"
               download
             >
               <IoMdDownload size={20} />

@@ -20,10 +20,6 @@ const AppRoute: AppRouteType[] = [
     label: "Experience",
     href: "#experience",
   },
-  {
-    label: "Contact",
-    href: "#contact",
-  },
 ] as const;
 
 export { AppRoute };

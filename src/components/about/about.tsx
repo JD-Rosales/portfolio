@@ -1,10 +1,18 @@
 import { TechStack } from "~/data/data";
 
+import { useSectionInView } from "~/hooks/hooks";
+
 import { Image } from "./image";
 
 const About: React.FC = () => {
+  const { ref } = useSectionInView("#about");
+
   return (
-    <section className="overflow-x-hidden py-8">
+    <section
+      className="scroll-mt-28 overflow-x-hidden py-8"
+      id="about"
+      ref={ref}
+    >
       <h1 className="text-4xl font-bold text-green-700">About</h1>
       <div className="mt-8 flex flex-col gap-y-12 md:flex-row">
         <div className="flex flex-1 items-center justify-center">

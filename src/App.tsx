@@ -6,6 +6,7 @@ import "@splidejs/react-splide/css";
 
 import {
   About,
+  ActiveSectionProvider,
   Experience,
   Footer,
   Home,
@@ -32,7 +33,7 @@ function App() {
       {loading ? (
         <Loader />
       ) : (
-        <>
+        <ActiveSectionProvider>
           <Navbar />
           <main className="container mx-auto px-4 md:px-0">
             <Home />
@@ -41,7 +42,7 @@ function App() {
             <Experience />
           </main>
           <Footer />
-        </>
+        </ActiveSectionProvider>
       )}
     </>
   );

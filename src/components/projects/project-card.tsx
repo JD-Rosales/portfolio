@@ -17,7 +17,7 @@ const ProjectCard: React.FC<Properties> = ({ data }: Properties) => {
       <Splide className="w-full">
         {data.image.map((image, index) => {
           return (
-            <SplideSlide key={`slide-image-${index}`}>
+            <SplideSlide key={index}>
               <div className="aspect-h-9 aspect-w-16">
                 <img
                   alt={`${data.name}`}
@@ -31,9 +31,7 @@ const ProjectCard: React.FC<Properties> = ({ data }: Properties) => {
       </Splide>
 
       <div className="flex flex-col">
-        <span className="block text-center text-lg font-bold underline">
-          {data.name}
-        </span>
+        <span className="block text-center text-lg font-bold">{data.name}</span>
         {data.association && (
           <span className="block text-center text-sm text-gray-400">
             Associated with {data.association}
@@ -44,9 +42,12 @@ const ProjectCard: React.FC<Properties> = ({ data }: Properties) => {
 
       {data.tech && (
         <div className="mb-6 mt-2 flex flex-wrap gap-2">
-          {data.tech.map((techStack) => {
+          {data.tech.map((techStack, index) => {
             return (
-              <div className="flex items-center gap-1 rounded-full bg-slate-900 px-3 py-1 text-xs">
+              <div
+                className="flex items-center gap-1 rounded-full bg-slate-900 px-3 py-1 text-xs"
+                key={index}
+              >
                 <div className="h-2 w-2 rounded-full bg-green-700" />
                 <span>{techStack}</span>
               </div>

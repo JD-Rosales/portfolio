@@ -1,8 +1,16 @@
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 
+import { useSectionInView } from "~/hooks/hooks";
+
 const Home: React.FC = () => {
+  const { ref } = useSectionInView("#home");
+
   return (
-    <section className="flex min-h-[89vh] flex-col gap-6 md:flex-row">
+    <section
+      className="flex min-h-[89vh] scroll-mt-28 flex-col gap-6 md:flex-row"
+      id="home"
+      ref={ref}
+    >
       <div
         data-aos="fade-right"
         data-aos-duration="1500"

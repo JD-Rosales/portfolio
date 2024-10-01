@@ -4,10 +4,16 @@ import {
 } from "react-vertical-timeline-component";
 
 import { ExperienceData } from "~/data/data";
+import { useSectionInView } from "~/hooks/hooks";
 
 const Experience: React.FC = () => {
+  const { ref } = useSectionInView("#experience", 0.2);
   return (
-    <section className="my-8 min-h-screen py-8">
+    <section
+      className="my-8 min-h-screen scroll-mt-16 py-8"
+      id="experience"
+      ref={ref}
+    >
       <h3 className="text-4xl font-bold text-green-700">Experience</h3>
       <div className="mt-8">
         <VerticalTimeline lineColor="#15803d">

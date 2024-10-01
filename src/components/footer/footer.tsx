@@ -3,7 +3,7 @@ const Footer: React.FC = () => {
     <footer className="container mx-auto flex flex-col px-4 text-center text-white md:px-0">
       <div className="mx-auto h-[1px] w-2/3 bg-gray-500" />
 
-      <div className="py-8 md:py-12">
+      <div className="flex flex-col gap-y-4 px-12 py-8 md:py-12">
         <p>
           Looking for A software Developer? Send me an{" "}
           <a className="underline" href="mailto:rosales.jake1999@gmail.com">
